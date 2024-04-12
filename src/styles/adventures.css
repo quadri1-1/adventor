@@ -1,0 +1,78 @@
+.adventure-card{
+    width: 90%;
+    margin: 10px auto;
+}
+.maincard{
+    margin-top: 10px;
+    width: 285px;
+    margin: auto;
+}
+.photo{
+    width: 282px;
+    height: 252px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.title-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-icon h5{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--palanquin);
+}
+.title-icon p{
+    color: var(--action);
+    gap: 5px;
+}
+.adventure-text{
+    font-family: var(--jost);
+    font-size: 20px;
+    color: var(--grey);
+    line-height: 30px;
+    font-weight: 400;
+}
+.adventure-text button{
+    background-color: transparent;
+    cursor: none;
+    border: none;
+    font-size: 18px;
+    font-family: var(--jost);
+    font-weight: 400;
+    color: var(--action);
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.notbtn{
+    width: 282px;
+    height: 38px;
+    background-color: var(--action);
+    font-family: var(--jost);
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    cursor: none;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+@media(min-width :768px){
+    .adventure-card{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media(min-width: 1440px){
+    .adventure-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
